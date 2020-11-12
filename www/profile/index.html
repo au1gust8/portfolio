@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Son Seung-Yeon</title>
-	<meta name="author" content="Alvaro Trigo Lopez">
+    <meta charset="UTF-8">
+    <title>Son Seung-Yeon</title>
+    <meta name="author" content="Alvaro Trigo Lopez">
+    <meta name="viewport" content="width=device-width">
 	<meta name="description" content="fullPage fixed full-screen backgrounds.">
 	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed,fullscreen,backgrounds,full-screen">
 	<meta name="Resource-type" content="Document">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./dist/fullpage.css">
-	<link rel="stylesheet" type="text/css" href="profile.css">
-
+	<link rel="stylesheet" href="./dist/fullpage.css">
+	<link rel="stylesheet" href="profile.css">
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+	<script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
@@ -19,7 +24,7 @@
 	<![endif]-->
 </head>
 <body>
-
+    <div id="wrap">
 <ul id="menu">
    <h1><span>Son Seung-yeon's</span><br>Portfolio</h1>
     <li data-menuanchor="firstPage" class="active"><a href="#firstPage">index</a></li>
@@ -31,13 +36,12 @@
     <li data-menuanchor="7thPage"><a href="#7thPage">WordPress</a></li>
     <li data-menuanchor="8thPage"><a href="#8thPage">Contact</a></li>
 </ul>
-
 <div id="fullpage">
 	<div class="section active" id="section0">
 	<div class="intro">
 	<h1>Son Seung-Yeon</h1><p>Web Publisher</p></div>
 	<figure>
-	<div><img src="./imgs" alt=""></div>
+	<div><img src="./imgs/prf.png" alt=""></div>
 	<figcaption><p></p></figcaption>
 	</figure>
 	
@@ -46,8 +50,9 @@
 	<div class="section" id="section1">
 	<h1>Profile</h1>
 	<figure>
-	<div><img src="./imgs" alt=""></div>
-	<figcaption><p>손승연</p><ul>
+	<div><img src="./imgs/ssy.png" alt=""></div>
+	<figcaption><ul>
+    <li><p>손승연</p></li>
 	    <li>
 	        <dl>
 	            <dt>Birth</dt>
@@ -72,22 +77,26 @@
 	            <dd>Adobe Photoshop / illustrator / XD / After Effects / premiere pro</dd>
 	        </dl>
 	    </li>
-	</ul></figcaption>
-	</figure>
-	<ul>
-	    <li><a href="https://github.com/au1gust8/SSY-Portfolio/tree/master/www">Git Hub</a></li>
-	    <li><a href="#">Story Board</a></li>
-	    <li><a href="#">Online Resume</a></li>
+       <li>
+        <ul class="linkBtn"> 
+        <li class="git"><a href="https://github.com/au1gust8/portfolio.git" target="_blank">Git Hub</a></li>
+        <li class="storyboad"><a href="#">Story Board</a></li>
+        <li class="resume"><a href="#">Online Resume</a></li></ul>
+       </li>
+       
+           
 	</ul>
+	</figcaption>
+	</figure>
+	
 	</div>
 	
 	<div class="section" id="section2">
-	<h1>Desktop Web Site</h1>
-	
+	<h1>Desktop Web Site</h1><p>KIDP한국디자인진흥원</p>
+
     <figure>
     <div><img src="./imgs/kidpdesktop.gif" alt=""></div>
     <figcaption>
-    <p>기업형 - 한국디자인진흥원</p>
     <ul>
     <li>
     <dl>
@@ -114,7 +123,7 @@
     </dl>
     </li>
     <li>
-    <a href="http://helle99.cafe24.com">VIEW SITE</a>
+    <a href="http://helle99.cafe24.com" target="_blank">VIEW SITE</a>
     </li>
     </ul>
     </figcaption>
@@ -122,11 +131,11 @@
 </div>
 	
 	
-	<div class="section" id="section3"><h1>Mobile Web</h1>
+	<div class="section" id="section3"><h1>Mobile Web</h1><p>KIDP한국디자인진흥원</p>
+
 	    <figure>
     <div><img src="./imgs/kidpmobileimg.png" alt=""></div>
     <figcaption>
-    <p>기업형 - 한국디자인진흥원</p>
     <ul>
     <li>
     <dl>
@@ -152,17 +161,17 @@
         <dd>CSS3(Media query)를 이용해 기기별 해상도 서비스 제공</dd>
     </dl>
     </li>
-    <li><a href="http://helle99.cafe24.com/mobile">VIEW SITE</a></li>
+    <li><a href="http://helle99.cafe24.com/mobile" target="_blank">VIEW SITE</a></li>
     </ul>
     </figcaption>
     </figure>
 	</div>
 	
-	<div class="section" id="section4"><h1>Responsive Web</h1>
+	<div class="section" id="section4"><h1>Responsive Web</h1><p>Sing Street</p>
+
 	<figure>
     <div><img src="./imgs/mediaflexible.gif" alt=""></div>
     <figcaption>
-    <p>Sing Street</p>
     <ul>
     <li>
     <dl>
@@ -189,18 +198,18 @@
     </dl>
     </li>
     <li>
-    <a href="http://helle99.cafe24.com/media">VIEW SITE</a>
+    <a href="http://helle99.cafe24.com/media" target="_blank">VIEW SITE</a>
     </li>
     </ul>
     </figcaption>
     </figure>
 </div>
 	
-	<div class="section" id="section5"><h1>BootStrap</h1>
+	<div class="section" id="section5"><h1>BootStrap</h1><p>Henri Matisse</p>
+
 	<figure>
     <div><img src="./imgs/bootflexible.gif" alt=""></div>
     <figcaption>
-    <p>Henri Matisse</p>
     <ul>
     <li>
     <dl>
@@ -227,18 +236,17 @@
     </dl>
     </li>
     <li>
-    <a href="http://helle99.cafe24.com/boot">VIEW SITE</a>
+    <a href="http://helle99.cafe24.com/media2" target="_blank">VIEW SITE</a>
     </li>
     </ul>
     </figcaption>
     </figure>
 </div>
 	
-	<div class="section" id="section6"><h1>WordPress</h1>
-	<figure>
+	<div class="section" id="section6"><h1>WordPress</h1><p>index</p>
+<figure>
     <div><img src="./imgs/wpflexible.gif" alt=""></div>
     <figcaption>
-    <p>index</p>
     <ul>
     <li>
     <dl>
@@ -261,11 +269,11 @@
     <li>
     <dl>
         <dt>focus</dt>
-        <dd>테마 SYDNEY와 플러그인 Elementor를 활용한 웹사이트 구현</dd>
+        <dd>PC, 태블릿, 모바일 해상도에 최적화된 UI구현</dd>
     </dl>
     </li>
     <li>
-    <a href="http://helle99.dothome.co.kr/wp">VIEW SITE</a>
+    <a href="http://helle99.dothome.co.kr/wp" target="_blank">VIEW SITE</a>
     </li>
     </ul>
     </figcaption>
@@ -277,21 +285,23 @@
 	    <p></p>
         </div>
 	    <div>
-	        <figure>
-	            <img src="" alt="">
-	            <figcaption>
-	                <p></p>
-	            </figcaption>
-	        </figure>
+        <ul class="hp">
+	            <li><a href="tel:+82 10-4523-0029" title="손승연에게 전화걸기">📞</a></li>
+	        </ul>
+	        <ul class="email">
+	            <li><a href="mailto:au1gust8@gmail.com" title="손승연에게 메일전송">📧</a></li>
+	        </ul>
+	        
+	       </div>
 	    </div>
 	</div>
 	
-</div>
+    </div>
 
-<script type="text/javascript" src="./dist/fullpage.js"></script>
-<script type="text/javascript" src="profile.js"></script>
+<script src="./dist/fullpage.js"></script>
+<script src="profile.js"></script>
 
-<script type="text/javascript">
+<script>
     var myFullpage = new fullpage('#fullpage', {
         verticalCentered: false,
 
