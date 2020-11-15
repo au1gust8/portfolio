@@ -15,13 +15,13 @@
 /*news*/
 
 
-#content .news{position: relative;height:700px;background-image: linear-gradient(180deg,#f00,#f66);overflow: hidden}
-#content .news h3{color: #fff;float: left;padding:20px 0 0 15px;font-weight: bold;margin-bottom: 40px;font-size: 1.4em}
-#content .news .allbtn{position: absolute;top: 2%;right: 5%}
-#content .news div{clear: both;overflow: hidden;width: 100%;margin-top: 170px}
+#content .news{position: relative;height:700px;overflow: hidden}
+#content .news h3{color: #333;float: left;padding:130px 0 0 15px;font-weight: bold;margin-bottom: 40px;font-size: 1.4em}
+#content .news .allbtn{position: absolute;top: 15%;right: 5%}
+#content .news div{clear: both;overflow: hidden;width: 100%;margin-top: 100px}
 #content .news ul{padding-left: 0px;padding-right: 10px;width: 3000px;height: 400px;transition-duration: 0s;transform: translate3d(0px, 0px, 0px);overflow: hidden}
-#content .news ul .swiper-slide{width: 210px;height: 400px;float: left;position: relative;left: 10px;overflow: hidden;}
-#content .news ul .swiper-slide a{display: block;background: #fff;border-radius:20px; width: 200px;height: 400px; overflow: hidden}
+#content .news ul .swiper-slide{width: 210px;height: 410px;float: left;position: relative;left: 10px;overflow: hidden;}
+#content .news ul .swiper-slide a{display: block;background: #fff;border-radius:20px; width: 200px;height: 400px; overflow: hidden;border: 1px solid #ccc}
 
 #content .news ul li img{margin-bottom: 23px;width:200px;height: 150px}
 #content .news ul li dl{padding: 0 10px; }
