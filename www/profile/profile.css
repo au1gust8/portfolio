@@ -337,8 +337,9 @@ h1{
 .section figure figcaption ul li dl dd{text-align: center;line-height: 1.5em;margin-left: 0;font-size:14px;}
 .section figure figcaption ul li a{
     
-    display: block; width:inherit;height:inherit;background: #000;text-indent:inherit;color: #fff;transition:none;margin: 3% auto;padding: 5px 5px;border-radius:20px
+    display: block; width:inherit;height:inherit;background: #fff;text-indent:inherit;color: #333;transition:none;margin: 3% auto;padding: 3px 3px;border-radius:20px;border: 2px solid #000;font-weight:500
     }
+.section figure figcaption ul li a:hover{;background: #000;text-indent:inherit;color: #fff;transition:none;margin: 3% auto;padding: 5px 5px;border-radius:20px;}
 #section1 figure{top: 0}
 #section1 figure p{text-align: center;font-size:1.375em;font-weight: bold}
 #section1 figure div{width:100%;margin-top: 20px}
