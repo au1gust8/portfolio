@@ -348,11 +348,11 @@ h1{
 #section1 figure figcaption p{position:relative;top: 0;left: 0;margin-bottom:20px}
 #section1 figure figcaption .linkBtn{width:fit-content;margin:0}
 #section1 figure figcaption .linkBtn li{float: left}
-#section1 .git a{display: block;background: url(./imgs/github.png) no-repeat;background-size:100px;text-indent: -999em;color: #fff;transition: all .4s;margin:0}
+#section1 .git a{display: block;background: url(./imgs/github.png) no-repeat;background-size:100px;text-indent: -999em;color: #fff;transition: all .4s;margin:0;border:0}
 #section1 .git a:hover{background:url(imgs/githubhover.png) no-repeat;background-size: 100px}
-#section1 .storyboad a{display: block;background: url(./imgs/StoryBoard.png) no-repeat;background-size:100px;text-indent: -999em;color: #fff;transition: all .4s;margin:0}
+#section1 .storyboad a{display: block;background: url(./imgs/StoryBoard.png) no-repeat;background-size:100px;text-indent: -999em;color: #fff;transition: all .4s;margin:0;border:0}
 #section1 .storyboad a:hover{background:url(imgs/StoryBoardhover.png) no-repeat;background-size: 100px}
-#section1 .resume a{display: block;background: url(./imgs/Resume.png) no-repeat;background-size:100px;text-indent: -999em;color: #fff;transition: all .4s;margin:0}
+#section1 .resume a{display: block;background: url(./imgs/Resume.png) no-repeat;background-size:100px;text-indent: -999em;color: #fff;transition: all .4s;margin:0;border:0}
 #section1 .resume a:hover{background:url(imgs/Resumehover.png) no-repeat;background-size: 100px}
 
 #section2 figure div img{width: 65%}
