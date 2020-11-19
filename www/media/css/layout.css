@@ -155,6 +155,9 @@
     #content .trailer ul{height: auto}
     #content .trailer ul li img{width: 100%}
     #content .gallery{width: 100%}
+    #content .gallery div{width: 95%;margin:0 auto}
+    #content .gallery div .gal_left{display: none}
+    #content .gallery div .gal_center, #content .gallery div .gal_right{width: 50%}
 }
 
 /* 모바일 */
@@ -174,13 +177,13 @@
     #content .trailer ul li img{width: 100%}
 	#content .character .con ul{width:100%;float:none}
     #content .character .con ul li img{width:100%;margin: 0 auto}
-    #content .character .con ul li:nth-of-type(1){width: 640px;margin-bottom: 0;margin: 0 auto}
+    #content .character .con ul li:nth-of-type(1){width:100%;margin-bottom: 0;margin: 0 auto}
     #content .character .con ul li:nth-of-type(2){display: none}
    #content .gallery{width: 100%;margin-bottom:5px}
 /*    #content .gallery div .gal .item div{width: 308px;height: 308px}*/
     #content .gallery .gal_left{display: none}
     #content .gallery div .gal_center, #content .gallery div .gal_right {
-    width: 308px;}
+    width: 50%;}
     #content .gallery div{width: 100%}
     #content .gallery .gal{float: left;width:100%}
     #content .gallery .gal li{width: 300px;height: 300px;overflow: hidden;background:#aaa89c}
