@@ -24,7 +24,7 @@ h3{font-family: 'Nothing You Could Do', cursive;font-size: 70px;padding: 65px 0;
 #headerArea	.headerInner{width: 80%; margin: 0 10%;
 	  overflow: hidden}
 #headerArea h1{ float: left;padding-top: 13px}
-#headerArea h1 a{background:url(../images/logo.png)no-repeat;display: block; width:230px; height: 107px; background-size:150px;}	
+#headerArea h1 a{background:url(../images/logo.png)no-repeat;display: block; width:230px; height: 107px; background-size:120px;}	
 #headerArea #gnb{float: right;margin-top: 50px}
 #headerArea #gnb .menu{overflow: hidden;height: 30px}
 #headerArea #gnb .menu li{float: left; margin-right: 40px;}
