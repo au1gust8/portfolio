@@ -18,11 +18,8 @@ h3{font-family: 'Nothing You Could Do', cursive;font-size: 70px;padding: 65px 0;
 .hidden,#skipNav{display: block;position: absolute;left: -1000%;top: 0;width: 1px;height: 1px;overflow: hidden;color: #fff}
 
 /*header*/
-#headerArea{position:fixed; z-index: 30; height:120px;
-	  left:0; top: 0;
-	 width: 100%;}	
-#headerArea	.headerInner{width: 80%; margin: 0 10%;
-	  overflow: hidden}
+#headerArea{position:fixed; z-index: 30; height:100px; left:0; top: 0; width: 100%;}	
+#headerArea	.headerInner{width: 80%; margin: 0 10%; overflow: hidden}
 #headerArea h1{ float: left;padding-top: 13px}
 #headerArea h1 a{background:url(../images/logo.png)no-repeat;display: block; width:230px; height: 107px; background-size:120px;}	
 #headerArea #gnb{float: right;margin-top: 50px}

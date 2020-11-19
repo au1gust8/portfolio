@@ -73,6 +73,15 @@
 #content .character .con ul li:nth-of-type(1) img{width: 100%}
 #content .character .con ul li:nth-of-type(2){padding: 0 16%;font-size:1.2em;line-height:2em}
 #content .character .con ul li:nth-of-type(2) span{margin-bottom: 30px;text-align: right;font-weight: bold;color: #369;border-bottom: 2px solid #997}
+
+#content .hch{margin-bottom: 100px;display: flex ;flex-flow: row wrap;align-content:space-between;}
+#content .hch figure{width: 33.333%}
+#content .hch figure div{margin-bottom: 50px;width: 100%}
+#content .hch figure div img{}
+#content .hch figure figcaption{}
+#content .hch figure figcaption dl{padding: 0 7%}
+#content .hch figure figcaption dl dt{margin-bottom: 30px;font-size: 2em;font-weight: bold;font-family: 'Nothing You Could Do'}
+#content .hch figure figcaption dl dd{font-size: 1.2em;line-height: 2em}
 /*gallery*/
 #content .gallery{margin-bottom: 150px}
 #content .gallery div{width: 1280px;margin: 0 auto;height: 900px;display: flex;flex-wrap: nowrap}
@@ -147,15 +156,17 @@
 /* 일반 pc */
 @media screen and (max-width:1280px) {
 	#content{margin:0 auto}
-    
-    
+#content .hch figure div{margin-bottom: 50px;width:90%}
+#content .hch figure div img{width: 100%}
+.feature .swiper-pagination {position: relative;
+	margin-top:80px;}
 }
 
 
 /* 테블릿 */
 @media screen and (max-width:1024px) {
     #content{width: 100%}
-	#content div{width: 100%; margin:0 auto}
+	#content div{margin:0 auto 100px auto}
     #content .about{}
     #content .about ul li:nth-of-type(1){width:100%;float: none}
     #content .about ul li:nth-of-type(2){}
@@ -182,6 +193,8 @@
     #content .gallery div .gal_left,#content .gallery div .gal_center,#content .gallery div .gal_right {
     width: 340px;}
     #content .gallery .gal_left .left2{display: none}
+    #content .feature .swiper-pagination {position: relative;margin-top:80px;}
+    
 }
 
 /* 소형 테블릿 */
@@ -199,6 +212,11 @@
     #content .gallery div .gal_center, #content .gallery div .gal_right{width: 50%}
     .feature .button div{width: 40px;height: 40px;}
 	.feature .button div a {background-size: 20px 20px;}
+    
+#content .hch figure{width:50%;margin-bottom: 100px}
+#content .hch figure div{margin-bottom: 50px;width: 100%}
+#content .hch figure div img{width: 100%}
+#content .feature .swiper-pagination {position: relative;margin-top:80px;}
 }
 
 /* 모바일 */
@@ -225,11 +243,15 @@
     #content .gallery .gal_left{display: none}
     #content .gallery div .gal_center, #content .gallery div .gal_right {
     width: 50%;}
-    #content .gallery div{width: 100%}
+    #content .gallery div{width:93%}
     #content .gallery .gal{float: left;width:100%}
     #content .gallery .gal li{width: 300px;height: 300px;overflow: hidden;background:#aaa89c}
     #content .gallery .gal li img{width:100%}
     #content .gallery .gal li figure {height: 100%;}
+    
+    #content .hch figure{width:100%}
+#content .hch figure div{margin-bottom: 0;width: 100%}
+#content .hch figure div img{width: 100%}
 }
 
 /* 최소 사이즈 처리 */
