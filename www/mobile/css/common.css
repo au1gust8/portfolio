@@ -66,7 +66,7 @@ table{border-collapse: collapse}
      position:absolute; left:0; top:0; z-index:10; display:none}
 
 #headerArea .headerBox #nav{clear:both; width:85%; position:absolute; right:-100%; top:0; opacity:0; z-index:20; background: red}
-	     
+/*	right-100%     */
 #headerArea .headerBox #nav .mainMenu{margin:150px 0 0 50px;float: left}
 #headerArea .headerBox #nav li.depth1{text-align:left;color: #fff;font-size: 1.15em}
 #headerArea .headerBox #nav li.depth1 a span{font-size:0.5em}
@@ -101,7 +101,7 @@ table{border-collapse: collapse}
 .sub_nav_box .subnav ul li a:hover{color: #f00;font-weight: bold;letter-spacing: -1px;transition: all .4s ease}
 .sub_nav_box .subnav ul li .current{color: #f00;font-weight: bold;letter-spacing: -1px}
 .sub_nav_box .subnav ul li .current::after{display: block;content: '';width: 5px;height: 5px;border-radius: 50px;background: #f00;margin: 10px 50%;opacity:1;}
-
+.current{color: #f00}
 
 
 #footerArea{overflow: hidden; clear: both}

@@ -13,12 +13,10 @@
 <title>인사말</title>
 <link rel="apple-touch-icon-precomposed" href="app_icon.png">
 <link rel="apple-touch-startup-image" href="startup.png">
-<link rel="stylesheet" href="css/sub1.css">
+<!--<link rel="stylesheet" href="css/sub1.css">-->
 <link rel="stylesheet" href="css/common.css">    
 <link rel="stylesheet" href="css/idangerous.swiper.css">
-<link rel="stylesheet" href="css/flexslider.css">
-<script src="js/prefixfree.min.js"></script>
-<script src="js/nav_new.js"></script>
+
 <script>
 // <![CDATA[
 try {
@@ -30,7 +28,6 @@ catch (e) {}
 // ]]>
 </script>
 <script src="js/jquery-1.7.1.min.js"></script>
-<script src="js/nav_new.js"></script>
 <script>
 window.onload=function(){
 
@@ -63,7 +60,69 @@ window.onload=function(){
 </head>
 
 <body>
-<? include "head.html" ?>
+<div id="wrap">
+ <div class="box"></div>
+<header id="headerArea">
+<div class="headerBox">
+<h1><a href="index.html"></a></h1>
+<a href="#" class="menuBtn"><span></span><span></span><span></span></a>
+<div id="nav">
+<nav id="gnb">
+<ul class="user">
+    <li>
+        <a href="#"></a>
+    </li>
+</ul>
+<h2 class="hidden">글로벌네비게이션영역</h2>
+<ul class="mainMenu">
+    <li class="depth1"><a href="#"><span>▼</span> 기관정보 및 사업정보</a>
+        <ul>
+            <li><a href="sub1-1.php">인사말</a></li>
+            <li><a href="sub1.html">기관역사</a></li>
+            <li><a href="sub1.html">경영목표·비전</a></li>
+        </ul>
+    </li>
+    <li class="depth1"><a href="#"><span>▼</span> 디자인의 사회적 가치</a>
+        <ul>
+            <li><a href="sub2.html">추진체계</a></li>
+            <li><a href="sub2.html">전략과제 및 추진활동</a></li>
+        </ul>
+    </li>
+    <li class="depth1"><a href="#"><span>▼</span> 통합 디자인 민원센터</a>
+        <ul>
+            <li><a href="sub3.html">핵심서비스 이행표준</a></li>
+            <li><a href="sub3.html">KIDP Main News</a></li>
+        </ul>
+    </li>
+    <li class="depth1"><a href="#"><span>▼</span> 문화확산 및 해외시장</a>
+        <ul>
+            <li><a href="sub4.html">대한민국디자인전람회</a></li>
+            <li><a href="sub4.html">디자인코리아</a></li>
+        </ul>
+    </li>
+</ul>
+<a class="mclose" href="#"></a>
+</nav>
+<ul class="join"> <?
+if(!$userid) 
+{
+?>
+<li><a href="../login/login_form.php">로그인</a></li>
+<li><a href="../member/join.html">회원가입</a></li>
+<?
+}
+else
+{
+?>
+<li><a href="../login/logout.php">로그아웃</a></li>
+<li><a href="../login/member_form_modify.php">정보수정</a></li>
+<?
+}
+?>
+</ul>
+</div>
+</div>
+</header>
 <div id="skipNav"><a href="#content">본문바로가기</a><a href="#gnb">네비게이션바로가기</a> </div>
 
 <div class="visual">
@@ -96,9 +155,12 @@ window.onload=function(){
     <br>감사합니다.</li>
 </ul>
     </article>
+    <? include "foot.html" ?>
+
+    </div>
 </body>
-<? include "foot.html" ?>
+<script src="js/prefixfree.min.js"></script>
+<script src="js/nav_new.js"></script>
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/jquery-migrate-1.4.1.min.js"></script>
-<script src="js/swiper.min.js"></script>
 </html>
