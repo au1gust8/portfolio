@@ -1,0 +1,16 @@
+/*page1*/
+.page1 img{width: 100%}
+.page1 h3{font-size:1.7em;margin-bottom: 30px;border-bottom: 1px solid #c66;padding-bottom: 10px}
+.page1 dl{margin-bottom: 200px}
+.page1 dl dt{margin:50px 0 30px 0;font-size:1.5em}
+.page1 dl dd{margin-bottom: 30px;font-size: 1.250em;line-height:1.7em;text-align: justify;color: #666}
+
+/*page2*/
+.page2 ul{overflow: hidden;margin-bottom: 30px}
+.page2 ul li ul{float: left;margin:0 20px 0 0}
+.page2 ul li ul:last-child{margin-right:0}
+.page2 ul li ul li a div{}
+.page2 ul li ul li{height:150px;margin: 0 0 100px 0;overflow: hidden}
+.page2 ul li ul li a div img{float: left;margin-right:20px;height:85px;width:100px}
+.page2 ul li ul li a div p:nth-of-type(1){font-size:0.9em;color: #666;margin-bottom: 10px;float: left;width: 60%}
+.page2 ul li ul li a div p:nth-of-type(2){font-size: 1.125em;margin-bottom: 30px;line-height: 1.5em;}
