@@ -100,7 +100,7 @@
 		}
 	}
 
-	include "../lib/dbconn.php";       // dconn.php 파일을 불러옴
+	include "../../lib/dbconn.php";       // dconn.php 파일을 불러옴
 
 	if ($mode=="modify")
 	{

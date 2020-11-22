@@ -5,7 +5,7 @@
     @extract($_SESSION);
    //$table, $num , 세션변수
 
-   include "../lib/dbconn.php";
+   include "../../lib/dbconn.php";
 
    $sql = "select * from $table where num = $num";
    $result = mysql_query($sql, $connect);

@@ -10,13 +10,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no">
     <title>KIDP MAIN NEWS</title>
-    <link rel="stylesheet" href="../common/css/common.css">
-    <link rel="stylesheet" href="../sub4/common/css/sub4common.css">
-    <link rel="stylesheet" href="css/news.css">
-
+   <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<!--<link rel="stylesheet" href="css/sub1.css">-->
+<link rel="stylesheet" href="../css/common.css">    
+<link rel="stylesheet" href="../css/sub3.css">    
+<link rel="stylesheet" href="css/news.css">    
+<link rel="stylesheet" href="css/idangerous.swiper.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<script src="js/prefixfree.min.js"></script>
+<script>
+// <![CDATA[
+try {
+    window.addEventListener('load', function () {
+        setTimeout(scrollTo, 0, 0, 1);
+    }, false);
+}
+catch (e) {}
+// ]]>
+</script>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/nav_new.js"></script>
 </head>
-<? include "../lib/dbconn.php";
+<? include "../../lib/dbconn.php";
 
     if (!$scale)
     $scale=10;			// 한 화면에 표시되는 글 수
@@ -61,22 +80,25 @@
 <? include"../common/sub_head.html" ?>
 
 <body>
-<div class="visual"><img src="../sub4/common/images/mainvisualsub.jpg" alt=""><h2>문화확산 및 해외시장</h2></div>
-<!--서브네비영역-->
-<div class="sub_nav_box">
-<div class="subnav"><ul>
-<li><a id="nav1" href="../sub4/sub4_1.html">대한민국디자인전람회</a></li>
-<li><a id="nav2" href="../sub4/sub4_2.html">한국청소년디자인전람회</a></li>
-<li><a id="nav3" href="../sub4/sub4_3.html">디자인코리아</a></li>
-<li><a id="nav4" class="current" href="list.php">KIDP MAIN NEWS</a></li>
-</ul></div>
-</div>
 <!--sub3_4.html-->                 
 <div id="wrap">
+<? include "head.html"?>
+<div id="skipNav"><a href="#content">본문바로가기</a><a href="#gnb">네비게이션바로가기</a> </div>
+
+<div class="visual">
+<!--<img src="../sub1/common/images/mainvisualsub.jpg" alt="">-->
+<h2>통합디자인민원센터</h2>
+</div>
+<div class="sub_nav_box">
+ <div class="subnav">
+    <ul>
+        <li><a id="nav1" href="../sub3-1.html">핵심서비스이행표준</a></li>
+        <li><a id="nav2" href="list.php">KIDP Main News</a></li>
+    </ul>
+</div>
+</div> 
+
 <article id="content">    
-<div id="title">
-<div class="title_area">
-<div class="linemap"><span>문화확산 및 해외시장</span>&gt;<strong>KIDP MAIN NEWS</strong></div><h3>KIDP MAIN NEWS</h3> </div></div> 
    
 <div class="content">
 <div id="list_top_title">
@@ -193,17 +215,8 @@
         
     </div> <!-- end of wrap -->
    
-    
-    
-    
-    
-    
-
-  
-   
 </article>
+<? include "foot.html" ?>
 </div>
-<? include"../common/sub_foot.html" ?>
-
 </body>
 </html>

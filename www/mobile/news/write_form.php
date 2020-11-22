@@ -4,7 +4,7 @@
     @extract($_GET);
     @extract($_SESSION);
     //새글쓰기 =>  $table=concert
-	include "../lib/dbconn.php";
+	include "../../lib/dbconn.php";
 
 	if ($mode=="modify") //수정 글쓰기면
 	{

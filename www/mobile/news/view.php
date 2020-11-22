@@ -6,7 +6,7 @@
 
     //table=concert num=1 page=1 이 넘어온다
 
-	include "../lib/dbconn.php";
+	include "../../lib/dbconn.php";
 
 	$sql = "select * from $table where num=$num";
 	$result = mysql_query($sql, $connect);
