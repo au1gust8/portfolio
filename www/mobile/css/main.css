@@ -2,13 +2,13 @@
 
 /*main visual*/
 .main{}
-.main .visual{}
-.main .visual div{}
-.main .visual div ul li{position: relative;}
-.main .visual div ul li img{width: 100%}
-.main .visual div p{position: absolute;top:40%;left: 12%;font-weight: bold;color: #fff;font-size: 1.2em;line-height: 1.5em}
-.main .visual div p .red{background: #f00}
-.main .visual div p span{font-weight: bold}
+.main .maingallery{}
+.main .maingallery div{}
+.main .maingallery div ul li{position: relative;}
+.main .maingallery div ul li img{width: 100%}
+.main .maingallery div p{position: absolute;top:40%;left: 12%;font-weight: bold;color: #fff;font-size: 1.2em;line-height: 1.5em}
+.main .maingallery div p .red{background: #f00}
+.main .maingallery div p span{font-weight: bold}
 
 
 /*본문영역*/

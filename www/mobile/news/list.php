@@ -19,8 +19,6 @@
 <link rel="stylesheet" href="../css/common.css">    
 <link rel="stylesheet" href="../css/sub3.css">    
 <link rel="stylesheet" href="css/news.css">    
-<link rel="stylesheet" href="css/idangerous.swiper.css">
-<link rel="stylesheet" href="css/swiper.min.css">
 <script src="js/prefixfree.min.js"></script>
 <script>
 // <![CDATA[
@@ -77,23 +75,20 @@ catch (e) {}
 	$start = ($page - 1) * $scale;      
 	$number = $total_record - $start;
 ?>
-<? include"../common/sub_head.html" ?>
-
 <body>
 <!--sub3_4.html-->                 
 <div id="wrap">
-<? include "head.html"?>
+<? include "../head.html"?>
 <div id="skipNav"><a href="#content">본문바로가기</a><a href="#gnb">네비게이션바로가기</a> </div>
 
-<div class="visual">
-<!--<img src="../sub1/common/images/mainvisualsub.jpg" alt="">-->
+<div class="visual visual3">
 <h2>통합디자인민원센터</h2>
 </div>
 <div class="sub_nav_box">
  <div class="subnav">
     <ul>
         <li><a id="nav1" href="../sub3-1.html">핵심서비스이행표준</a></li>
-        <li><a id="nav2" href="list.php">KIDP Main News</a></li>
+        <li><a id="nav2" href="list.php" class="current">KIDP Main News</a></li>
     </ul>
 </div>
 </div> 
@@ -216,7 +211,7 @@ catch (e) {}
     </div> <!-- end of wrap -->
    
 </article>
-<? include "foot.html" ?>
+<? include "../foot.html" ?>
 </div>
 </body>
 </html>

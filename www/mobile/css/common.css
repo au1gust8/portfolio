@@ -39,10 +39,12 @@ textarea {resize:none; }
 label {cursor:pointer; }
 table{border-collapse: collapse}
 .hidden,#skipNav{display: block;position: absolute;left: -1000%;top: 0;width: 1px;overflow: hidden;color: #fff}
+img {border: 0;vertical-align: top}
+.hidden {position: absolute;left: -1000%;width: 1px;
+    height: 1px;overflow: hidden;color: #fff}
 /*전체공통*/
 #wrap{ width:100%;overflow:hidden;position: relative}
 /*헤더공통*/
-#wrap{width:100%; overflow:hidden}
 #headerArea{position: relative;}
 #headerArea .headerBox{background:red;position: absolute;left: 0; right: 0; z-index: 100;padding: 15px 20px 10px; background: rgba(0,0,0,0)}
 #headerArea .headerBox h1{float: left}
@@ -50,17 +52,19 @@ table{border-collapse: collapse}
 @media screen and(-webkit-min-device-pixel-ratio:2){
     #headerArea .headerBox h1 a{background: url(../../common/images/main_logo.png)no-repeat;}
 }
-#headerArea .headerBox .menuBtn{float: right;overflow: hidden}
-#headerArea .headerBox .menuBtn span{display: block; width: 25px;height: 3px;background: #fff;margin-bottom: 7px}
-
-#headerArea .headerBox #gnb .user a{float: right; display: block;background: url(../images/user.png)no-repeat; width:25px; height: 25px; background-size:25px; height: 25px}
-@media screen and(-webkit-min-device-pixel-ratio:2){
-    #headerArea .headerBox #gnb .user a{background: url(../images/userx2.png)no-repeat;}
-}
- #headerArea .headerBox #gnb .mclose{position:absolute;right:15px; top:15px; display: block;background: url(../images/close.png)no-repeat; width:25px; height: 25px; background-size:25px; height: 25px}
-@media screen and(-webkit-min-device-pixel-ratio:2){
-    #headerArea .headerBox #gnb .mclose{background: url(../images/closex2.png)no-repeat;background-size:25px; height: 25px}
-}
+/*Hamberger Menu*/
+.menu-trigger {margin-right: 70px;margin-bottom: 50px;float: right}
+.menu-trigger,
+.menu-trigger span {display: inline-block;transition: all .4s;box-sizing: border-box;}
+.menu-trigger {position: relative;width: 50px;
+height: 44px;}
+.menu-trigger span {position: absolute;left: 0;width: 100%;height: 4px;background-color: #fff;border-radius: 4px;}
+.menu-trigger span:nth-of-type(1) {top: 0;}
+.menu-trigger span:nth-of-type(2) {top: 20px;}
+.menu-trigger span:nth-of-type(3) {bottom: 0;}
+.menu-trigger.active-1 span:nth-of-type(1) {-webkit-transform: translateY (20px) rotate (-45deg);transform: translateY(20px) rotate(-45deg);}
+.menu-trigger.active-1 span:nth-of-type(2) {opacity: 0;}
+.menu-trigger.active-1 span:nth-of-type(3) {-webkit-transform: translateY(-20px) rotate(45deg);transform: translateY(-20px) rotate(45deg);}
 
 #wrap .box{width:100%; height:100%; background:#000; opacity:0.7;
      position:absolute; left:0; top:0; z-index:10; display:none}
@@ -78,8 +82,27 @@ table{border-collapse: collapse}
 #headerArea .headerBox #nav .join a{color: #fff}
 #headerArea .headerBox #nav .join a:nth-of-type(1){float: left;margin-right: 20px}
 #headerArea .headerBox #nav .join a:nth-of-type(1)::after{display: block;content: '';width: 1px;height: 8px;background: #fff;position: absolute;left: 35px;top: 5px}
-#headerArea .headerBox #nav #gnb .user{position: absolute;top:15px;left:30px}
-#headerArea .headerBox #nav #gnb .user img{width: 26px;height: 26px}
+/*서브네비공통*/
+.visual{position: relative;height:220px;width: 100%;left: 50%;margin-left: -50%;z-index: -1}
+.visual1{background: url(../images/mainvisualsub1.jpg)}
+.visual2{background: url(../images/mainvisualsub2.jpg)}
+.visual3{background: url(../images/mainvisualsub3.jpg)}
+.visual4{background: url(../images/mainvisualsub4.jpg)}
+.visual h2{position: absolute;top: 45%;left: 29%;color: #fff;font-size: 2.3em}
+.sub_nav_box{width: 100%;overflow: hidden}
+.sub_nav_box .subnav{width:85%;margin: 0 auto}
+.sub_nav_box .subnav ul{overflow: hidden}
+.sub_nav_box .subnav ul li{width:50%;float: left;text-align: center;}
+.sub_nav_box .sub1nav ul li{width:33.33%;float: left;text-align: center;}
+.sub_nav_box .subnav ul li a{font-size:24px;display: block;padding: 20px 0;}
+.sub_nav_box .subnav ul li a:hover{color: #f00;font-weight: bold;letter-spacing: -1px;transition: all .4s ease}
+.sub_nav_box .subnav ul li .current{color: #f00;font-weight: bold;letter-spacing: -1px}
+.sub_nav_box .subnav ul li .current::after{display: block;content: '';width: 5px;height: 5px;border-radius: 50px;background: #f00;margin: 10px 50%;opacity:1;}
+.current{color: #f00}
+
+
+
+
 /*푸터공통*/
 #footerArea{background:#f5f5f5}
 #footerArea div{padding: 30px 20px;position: relative}
@@ -90,18 +113,6 @@ table{border-collapse: collapse}
 #footerArea ul li{color: #999;line-height: 2em;font-size:1.229em}
 #footerArea p{color: #999;font-size: 0.929em;line-height: 1.5em}
 
-.subvisual{width: 2000px;height: 300px;background: #333;position: relative;left: 50%;margin-top:200px; margin-left: -1000px;z-index: -1}
-/*
-.subvisual h2{position: absolute;z-index: 999;top: 45%;left: 42%;font-size: 40px;color: #fff;font-weight: normal}
-.subvisual .sub_nav_box{width: 1200px;margin: 0 auto;overflow: hidden}
-.sub_nav_box .subnav ul{overflow: hidden;width: 1000px;margin: auto}
-*/
-.sub_nav_box .subnav ul li{width: 25%;float: left;text-align:center}
-.sub_nav_box .subnav ul li a{font-size:24px;display: block;padding: 20px 0;}
-.sub_nav_box .subnav ul li a:hover{color: #f00;font-weight: bold;letter-spacing: -1px;transition: all .4s ease}
-.sub_nav_box .subnav ul li .current{color: #f00;font-weight: bold;letter-spacing: -1px}
-.sub_nav_box .subnav ul li .current::after{display: block;content: '';width: 5px;height: 5px;border-radius: 50px;background: #f00;margin: 10px 50%;opacity:1;}
-.current{color: #f00}
 
 
 #footerArea{overflow: hidden; clear: both}
