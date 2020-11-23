@@ -1,7 +1,7 @@
 $(document).ready(function() {
    
  	
-   $(".menuBtn").click(function() { //메뉴버튼 클릭시
+   $(".menu-trigger").click(function() { //메뉴버튼 클릭시
        
        var documentHeight =  $(document).height();
        //실제 페이지의 높이 = $(document).height();
@@ -16,6 +16,7 @@ $(document).ready(function() {
    $(".box,.mclose").click(function() { //닫기버튼 클릭시
      $("#nav").animate({right:'-100%',opacity:1}, 500);
      $(".box").hide();
+     $(".menu-trigger span").css('background-color', 'red');
    });
     //2depth 메뉴 교대로 열기 처리 (show/hide대신 변수사용)
     var onoff=[false,false,false,false];//depth개수로 맞춘다
