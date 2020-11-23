@@ -48,19 +48,18 @@ img {border: 0;vertical-align: top}
 #headerArea{position: relative;}
 #headerArea .headerBox{background:red;position: absolute;left: 0; right: 0; z-index: 100;padding: 15px 20px 10px; background: rgba(0,0,0,0)}
 #headerArea .headerBox h1{float: left}
-#headerArea .headerBox h1 a{background: url(../../common/images/main_logo.png)no-repeat;display: block; width:175px; height: 30px; background-size:175px; height:30px}
+#headerArea .headerBox h1 a{background: url(../../common/images/main_logo.png)no-repeat;display: block; width:175px; height: 30px; background-size:175px;}
 @media screen and(-webkit-min-device-pixel-ratio:2){
     #headerArea .headerBox h1 a{background: url(../../common/images/main_logo.png)no-repeat;}
 }
 /*Hamberger Menu*/
-.menu-trigger {margin-right: 70px;margin-bottom: 50px;float: right}
+.menu-trigger {margin-right: 5px;float: right;position: relative;width:32px;
+height:24px}
 .menu-trigger,
 .menu-trigger span {display: inline-block;transition: all .4s;box-sizing: border-box;}
-.menu-trigger {position: relative;width: 50px;
-height: 44px;}
-.menu-trigger span {position: absolute;left: 0;width: 100%;height: 4px;background-color: #fff;border-radius: 4px;}
+.menu-trigger span {position: absolute;left: 0;width: 100%;height: 3px;background-color: #f00;border-radius: 3px;}
 .menu-trigger span:nth-of-type(1) {top: 0;}
-.menu-trigger span:nth-of-type(2) {top: 20px;}
+.menu-trigger span:nth-of-type(2) {top:10px;}
 .menu-trigger span:nth-of-type(3) {bottom: 0;}
 .menu-trigger.active-1 span:nth-of-type(1) {-webkit-transform: translateY (20px) rotate (-45deg);transform: translateY(20px) rotate(-45deg);}
 .menu-trigger.active-1 span:nth-of-type(2) {opacity: 0;}
@@ -83,18 +82,18 @@ height: 44px;}
 #headerArea .headerBox #nav .join a:nth-of-type(1){float: left;margin-right: 20px}
 #headerArea .headerBox #nav .join a:nth-of-type(1)::after{display: block;content: '';width: 1px;height: 8px;background: #fff;position: absolute;left: 35px;top: 5px}
 /*서브네비공통*/
-.visual{position: relative;height:220px;width: 100%;left: 50%;margin-left: -50%;z-index: -1}
+.visual{position: relative;height:150px;width: 100%;left: 50%;margin: 55px 0 0 -50%;z-index: -1}
 .visual1{background: url(../images/mainvisualsub1.jpg)}
 .visual2{background: url(../images/mainvisualsub2.jpg)}
 .visual3{background: url(../images/mainvisualsub3.jpg)}
 .visual4{background: url(../images/mainvisualsub4.jpg)}
-.visual h2{position: absolute;top: 45%;left: 29%;color: #fff;font-size: 2.3em}
+.visual h2{text-align: center;padding:15% 0 0;color: #fff;font-size: 2em}
 .sub_nav_box{width: 100%;overflow: hidden}
 .sub_nav_box .subnav{width:85%;margin: 0 auto}
 .sub_nav_box .subnav ul{overflow: hidden}
 .sub_nav_box .subnav ul li{width:50%;float: left;text-align: center;}
 .sub_nav_box .sub1nav ul li{width:33.33%;float: left;text-align: center;}
-.sub_nav_box .subnav ul li a{font-size:24px;display: block;padding: 20px 0;}
+.sub_nav_box .subnav ul li a{font-size:20px;display: block;padding: 20px 0;}
 .sub_nav_box .subnav ul li a:hover{color: #f00;font-weight: bold;letter-spacing: -1px;transition: all .4s ease}
 .sub_nav_box .subnav ul li .current{color: #f00;font-weight: bold;letter-spacing: -1px}
 .sub_nav_box .subnav ul li .current::after{display: block;content: '';width: 5px;height: 5px;border-radius: 50px;background: #f00;margin: 10px 50%;opacity:1;}

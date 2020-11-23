@@ -1,7 +1,7 @@
 $(document).ready(function() {
    
  	
-   $(".menuBtn,.menu-trigger").click(function() { //메뉴버튼 클릭시
+   $(".menuBtn").click(function() { //메뉴버튼 클릭시
        
        var documentHeight =  $(document).height();
        //실제 페이지의 높이 = $(document).height();
@@ -11,24 +11,12 @@ $(document).ready(function() {
 
        $("#nav").animate({right:0,opacity:1}, 'slow');
        $(".box").show();
-       
-         var burger = $('.menu-trigger');
-
-        burger.each(function(index){
-        var $this = $(this);
-
-        $this.on('click', function(e){
-        e.preventDefault();
-        $(this).toggleClass('active-' + (index+1));
-        });
-    
-  
+   });
    
-   $(".box,.mclose,.menu-trigger .active-1").click(function() { //닫기버튼 클릭시
+   $(".box,.mclose").click(function() { //닫기버튼 클릭시
      $("#nav").animate({right:'-100%',opacity:1}, 500);
      $(".box").hide();
    });
-     
     //2depth 메뉴 교대로 열기 처리 (show/hide대신 변수사용)
     var onoff=[false,false,false,false];//depth개수로 맞춘다
     //onoff[0]=false, onoff[1]=false, onoff[2]=false, onoff[3]=false
