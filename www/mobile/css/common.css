@@ -100,7 +100,7 @@ height:24px}
 .current{color: #f00}
 /*content*/
 #content{width: 95%;margin: 0 auto}
-h2{font-size: 2em;text-align: center;margin: 5% auto}
+h2{font-size: 2em;text-align: center;margin: 5% auto 10% auto}
 
 /*푸터공통*/
 #footerArea{background:#f5f5f5}
