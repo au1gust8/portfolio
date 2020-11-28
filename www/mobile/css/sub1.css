@@ -9,11 +9,11 @@
 #content .sub1 ul{}
 #content .sub1 ul li{margin-bottom: 30px;line-height: 2em;text-align: justify;font-size: 1.125em;}
 /*page2*/
-#content .sub2 .history1{background: url(../images/history2020.jpg)no-repeat;width: 85px;background-size:85px; height: 124px;opacity: .3;position: absolute;top:9%;right: 5%}
+#content .sub2 .history1{background: url(../images/history2020.jpg)no-repeat;width:190px;background-size:190px; height:220px;opacity: .3;}
 @media screen and(-webkit-min-device-pixel-ratio:2){
-#content .sub2 .history1{background: url(../images/history2020x2.jpg)no-repeat;background-size:85px; height: 124px}}
+#content .sub2 .history1{background: url(../images/history2020x2.jpg)no-repeat;background-size:190px; height: 124px}}
 #content .sub2 ul li{line-height: 2em;margin-bottom: 10px;font-size: 1.125em}
-#content .sub2 .history2{background: url(../images/history1999x2.jpg)no-repeat;width: 85px;background-size:85px; height: 124px;opacity: .3;position: absolute;top:81%;right: 5%}
+#content .sub2 .history2{background: url(../images/history1999x2.jpg)no-repeat;width:190px;background-size:190px; height:220px;opacity: .3}
 @media screen and(-webkit-min-device-pixel-ratio:2){
 #content .sub2 .history2{background: url(../images/history1999x2.jpg)no-repeat;background-size:85px; height: 124px}}
 #content .sub2 p{}
