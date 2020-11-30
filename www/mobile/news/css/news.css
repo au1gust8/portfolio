@@ -9,10 +9,10 @@ article{width: 100%;margin:5% auto 0}
 #title .title_area h3{font-size:3.125em;text-align: center}
 #title .title_area h3::before{content:'';display: block; border-top: 1px solid #000;width: 140px;margin: 0 auto;padding: 10px 0}
 /*button*/
-#page_button {margin:100px 0 0;height:200px;overflow: hidden;position: relative}
-#page_num {float: left;text-align: center;position: absolute;top:75%;left: 47%}
+#page_button {overflow: hidden;position: relative;padding: 5% 0 12%}
+#page_num {position: absolute;top:75%;width: 98%;margin:0 auto;text-align: center}
 #button {}
-#button a{display: block;padding: 8px;text-align: right; background: #fafafa;color: #333;border: 1px solid #753b3b;font-size: 1.25em;text-align: center;width: 300px;margin:0 auto 5px}
+#button a{display: block;padding: 8px;text-align: right; background: #fafafa;color: #333;border: 1px solid #753b3b;font-size: 1.25em;text-align: center;width:90%;margin:0 auto 5px}
 #button .adminbtn{width: 318px;margin: 0px auto 15px auto;overflow: hidden}
 #button .modify,#button .delete{width: 138px;float: left;}
 #button .modify{margin-right: 5px}
@@ -33,21 +33,21 @@ article{width: 100%;margin:5% auto 0}
 #list_top_title li{}
 #list_top_title #list_title1{font-weight: bold;font-size: 2.0em;margin-bottom: 20px}
 #list_content{width: 100%}
-#list_item {overflow: hidden;margin:0 auto 100px auto;padding: 5px 0}
+#list_item {overflow: hidden;margin:0 auto 10% auto;padding: 5px 0}
 #list_item1 {position: relative;margin-bottom:3%}
 #list_item1 span{display: none}
 #list_item1::after{display: block;content: '';background: #f00;width: 4px;height: 4px;border-radius: 50px;position: absolute;top: 0}
 #list_item1::before{display: block;content: '';background: #666;width: 90%;height: 1px;position: absolute;top: 0;left: 2%}
 #list_item2 {float: left;width: 100%}
 #list_item2 a{display: block;overflow: hidden}
-#list_item2 a p{font-size: 1.3em;font-weight: bold;margin:0 0 5% 5%;width: 85%;line-height: 1.5em}
-#list_item2 .thumimg{width:150px;height:91px;overflow: hidden;float: left;margin: 0 5%}
+#list_item2 a p{font-size: 1.125em;font-weight: bold;margin:0 0 5% 5%;width: 85%;line-height: 1.3em}
+#list_item2 .thumimg{width:60px;height:60px;overflow: hidden;float: left;margin: 0 5%}
 #list_item2 .thumimg img{width: 100%}
 #list_item3 {float: left;margin:2% 1% 0 5%}
 #list_item4 {float: left;margin:2% 1% 0 0}
 #list_item5 {float: left;margin:2% 0 0}
 /*view css*/
-.visual_view{margin:9% auto 0;width: 100%;height: 250px;overflow: hidden}
+.visual_view{margin:15% auto 0;width: 100%;height: 150px;overflow: hidden}
 .visual_view img{width: 100%;}
 .title_area_view{margin-bottom:5%}
 .linemap_view{text-align: center;font-size: 0.8em}
