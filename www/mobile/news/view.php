@@ -72,9 +72,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title><?= $item_subject ?></title>
-    <link href="../common/css/common.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
     <link href="css/news.css" rel="stylesheet">
+    <script src="js/prefixfree.min.js"></script>
+<script>
+// <![CDATA[
+try {
+    window.addEventListener('load', function () {
+        setTimeout(scrollTo, 0, 0, 1);
+    }, false);
+}
+catch (e) {}
+// ]]>
+</script>
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script src="../js/nav_new.js"></script>
 <script>
     function del(href) 
     {
@@ -84,11 +98,14 @@
     }
 </script>
 </head>
-  <? include"../common/sub_head.html" ?>
 <body>
  
 
-    <div class="visual_view"><?
+  
+    
+<div id="wrap">
+<? include "../head.html"?>
+  <div class="visual_view"><?
 	for ($i=0; $i<3; $i++)  //업로드된 이미지를 출력한다
 	{
 		if ($image_copied[$i])
@@ -102,8 +119,6 @@
 		}
 	}
 ?></div>
-    
-<div id="wrap">
 <article id="content_view">    
 <div id="title">    
 <div class="title_area_view">

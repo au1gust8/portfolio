@@ -30,8 +30,8 @@ try {
 catch (e) {}
 // ]]>
 </script>
-<script src="js/jquery-1.7.1.min.js"></script>
-<script src="js/nav_new.js"></script>
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script src="../js/nav_new.js"></script>
 </head>
 <? include "../../lib/dbconn.php";
 
