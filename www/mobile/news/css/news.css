@@ -1,7 +1,7 @@
 /*공통*/
-article{width: 1200px;margin: 150px auto 0}
+article{width: 100%;margin: 150px auto 0}
 
-#title {width: 1200px;margin:0 auto}
+#title {width: 100%;margin:0 auto}
 
 #title .title_area {position: relative;margin-bottom: 100px}
 #title .title_area .linemap{position: absolute;top:-70px;left:30px}
@@ -17,35 +17,35 @@ article{width: 1200px;margin: 150px auto 0}
 #button .modify,#button .delete{width: 138px;float: left;}
 #button .modify{margin-right: 5px}
 /* list css */
-#list_search {overflow: hidden;padding: 20px 0;width:1200px;margin: 0 auto}
-#list_search1 {float: left;}
-#list_search2 {float: left;margin: -1px 785px 0 10px;}
+#list_search {overflow: hidden;padding: 20px 0;width:100%}
+#list_search1 {float: left}
+#list_search2 {float: left;margin:-2px 5% 0 1%}
 #list_search2 select{border: 1px solid #999}
-#list_search3 {float: left;margin: 0 5px 0 0 }
+#list_search3 {float: left;margin:-3px 1% 0 0}
 #list_search3 select{width:80px;height:22px;border:solid 1px #999;}
 #list_search3 select option{border: 1px solid #ccc;padding: 3px 0}
-#list_search4 {float: left;margin: 0 5px 0 0}
-#list_search5 {float: left;}
+#list_search4 {float: left;margin:-3px 1% 0 0}
+#list_search5 {float: left;margin: -3px 0 0}
 #list_search #list_search4 input {width:120px;height:18px;border:solid 1px #999;}
 #list_search5 input{background: #fff;border: 1px solid #999}
 #content form{margin-bottom: 50px}
-#list_top_title {overflow: hidden;border-bottom: 1px solid #ccc; margin:0 auto;width: 1200px}
+#list_top_title {overflow: hidden;border-bottom: 1px solid #ccc}
 #list_top_title li{}
 #list_top_title #list_title1{font-weight: bold;font-size: 2.0em;margin-bottom: 20px}
-#list_content{}
-#list_item {width: 930px; overflow: hidden;margin:0 auto 100px auto;padding: 5px 0}
-#list_item1 {float: left;width: 970px;height: 10px; position: relative;margin-bottom: 40px}
+#list_content{width: 100%}
+#list_item {overflow: hidden;margin:0 auto 100px auto;padding: 5px 0}
+#list_item1 {position: relative;margin-bottom:3%}
 #list_item1 span{display: none}
 #list_item1::after{display: block;content: '';background: #f00;width: 4px;height: 4px;border-radius: 50px;position: absolute;top: 0}
 #list_item1::before{display: block;content: '';background: #666;width: 90%;height: 1px;position: absolute;top: 0;left: 2%}
-#list_item2 {float: left;width: 930px;height: 91px;}
+#list_item2 {float: left;width: 100%}
 #list_item2 a{display: block;overflow: hidden}
-#list_item2 a p{font-size: 1.8em;font-weight: bold;margin:0 20px 0 30px;float: left;width: 75%}
-#list_item2 .thumimg{width:150px;height:91px;overflow: hidden}
+#list_item2 a p{font-size: 1.3em;font-weight: bold;margin:0 0 5% 5%;width: 85%;line-height: 1.5em}
+#list_item2 .thumimg{width:150px;height:91px;overflow: hidden;float: left;margin: 0 5%}
 #list_item2 .thumimg img{width: 100%}
-#list_item3 {float: left;margin-left: 30px}
-#list_item4 {float: left;}
-#list_item5 {float: left;}
+#list_item3 {float: left;margin:2% 1% 0 5%}
+#list_item4 {float: left;margin:2% 1% 0 0}
+#list_item5 {float: left;margin:2% 0 0}
 /*view css*/
 .visual_view{margin: 201px auto 0;width: 100%;height: 250px;overflow: hidden}
 .visual_view img{width: 100%;}

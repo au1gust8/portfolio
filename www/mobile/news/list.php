@@ -154,8 +154,7 @@ catch (e) {}
 <div id="list_item">
     <div id="list_item1"><span><?= $number ?></span></div>
     <div id="list_item2">
-            <a href="view.php?table=<?=$table?>&num=<?=$item_num?>&page=<?=$page?>"><p><?= $item_subject ?></p>
-            <div class="thumimg"><img src="<?=$item_img?>" alt=""></div>
+            <a href="view.php?table=<?=$table?>&num=<?=$item_num?>&page=<?=$page?>"> <div class="thumimg"><img src="<?=$item_img?>" alt=""></div><p><?= $item_subject ?></p>
             <!--		 변수에 이미지 담겨있으면 src에 이미지가 출력된다.-->
             </a>
     </div>
