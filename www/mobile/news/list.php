@@ -109,7 +109,7 @@ catch (e) {}
     <li class="depth1"><a href="#"><span>▼</span> 문화확산 및 해외시장</a>
         <ul>
             <li><a href="../sub4-1.html">대한민국디자인전람회</a></li>
-            <li><a href="../sub4-2.html">디자인코리아</a></li>
+            <li><a href="../inquiry/list.php">1:1문의</a></li>
         </ul>
     </li>
 </ul>
