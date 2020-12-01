@@ -10,15 +10,16 @@ article{width: 1200px;margin: 150px auto}
 #title .title_area h3::before{content:'';display: block; border-top: 1px solid #000;width: 140px;margin: 0 auto;padding: 10px 0}
 
 /* list css */
-#list_search {overflow: hidden;padding: 10px 0}
-#list_search1 {float: left;}
-#list_search2 {float: left;margin: -1px 740px 0 10px;}
+#list_search {padding: 20px 0;display: flex;justify-content: center;align-items: center}
+#list_search1 {}
+#list_search2 {margin:-2px 5% 0 1%}
 #list_search2 select{border: 1px solid #999}
-#list_search3 {float: left;margin: 0 5px 0 0 }
-#list_search3 select{width:80px;height:22px;border:solid 1px #999;}
+#list_search3 {margin:-2px 1% 0 0}
+#list_search3 select{border:solid 1px #999;}
 #list_search3 select option{border: 1px solid #ccc;padding: 3px 0}
-#list_search4 {float: left;margin: 0 5px 0 0}
-#list_search #list_search4 input {width:120px;height:18px;border:solid 1px #999;}
+#list_search4 {margin:-3px 1% 0 0}
+#list_search5 {margin: -3px 0 0}
+#list_search #list_search4 input {width:90px;height:18px;border:solid 1px #999;}
 #list_search5 input{background: #fff;border: 1px solid #999}
 
 #list_top_title {overflow: hidden;padding:13px;border-top:solid 1px #999;margin-bottom:3px;}
@@ -37,8 +38,8 @@ article{width: 1200px;margin: 150px auto}
 #list_item4 {float: left; width: 185px;text-align: center;}
 #list_item5 {float: left;width: 70px;text-align: center;}
 /*button*/
-#page_button {margin:100px 0 0;height:200px;overflow: hidden;position: relative}
-#page_num {float: left;text-align: center;position: absolute;top:75%;left: 47%}
+#page_button {overflow: hidden;position: relative;padding: 5% 0 12%}
+#page_num {position: absolute;top:75%;width: 98%;margin:0 auto;text-align: center}
 #button {}
 #button a{display: block;padding: 8px;text-align: right; background: #fafafa;color: #333;border: 1px solid #753b3b;font-size: 1.25em;text-align: center;width: 300px;margin:0 auto 5px}
 #button .adminbtn{width: 318px;margin: 0px auto 15px auto;overflow: hidden}

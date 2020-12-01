@@ -263,7 +263,7 @@ else
 
     
         
-    </div> <!-- end of wrap -->
+    </div> <!-- end of .content -->
    
 </article>
 <? include "../foot.html" ?>

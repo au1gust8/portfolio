@@ -147,25 +147,22 @@ else
 </header>
 <div id="skipNav"><a href="#content">본문바로가기</a><a href="#gnb">네비게이션바로가기</a> </div>
 
-<div class="visual visual4"><h2>문화확산 및 해외시장</h2>
-</div>
+<div class="visual visual4">
+<h2>디자인전람회</h2></div>
 <div class="sub_nav_box">
 <div class="subnav">
 <ul>
-    <li><a id="nav1" href="sub4-1.html" class="current">디자인전람회</a></li>
-    <li><a id="nav2" href="list.php">1:1문의</a></li>
+    <li><a id="nav1" href="sub4-1.html">디자인전람회</a></li>
+    <li><a id="nav2" href="list.php" class="current">1:1문의</a></li>
 </ul>
 </div>
 </div> 
 <article id="content">
- <!--sub3_4.html-->    
-<div id="title">
-<div class="title_area">
-<div class="linemap"><span>디자인전람회</span>&gt;<strong>1:1문의</strong></div><h3>1:1문의</h3> </div></div>  
+ 
   <div class="content">
 		<form  name="board_form" method="post" action="list.php?mode=search"> 
 		<div id="list_search">
-			<div id="list_search1">전체 <?= $total_record ?> 개의 게시물</div>
+			<div id="list_search1">TOTAL <?= $total_record ?> </div>
 			<select id="list_search2" name="scale" onchange="location.href='list.php?scale='+this.value">
                     <option value=''>보기</option>
                     <option value='1'>10</option>
