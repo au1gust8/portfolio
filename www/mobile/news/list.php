@@ -159,7 +159,7 @@ else
 </div>
  <form name="board_form" method="post" action="list.php?table=<?=$table?>&mode=search">
     <div id="list_search">
-    <div id="list_search1">전체 <?= $total_record ?> 개의 게시물</div>
+    <div id="list_search1">TOTAL<?= $total_record ?></div>
         <div id="list_search2">
          <select name="scale" onchange="location.href='list.php?scale='+this.value">
             <option value=''>보기</option>
