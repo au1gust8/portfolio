@@ -10,7 +10,7 @@ ripple_num=$ripple_num(리플 글번호)
 
 */
 
-      include "../lib/dbconn.php";
+      include "../../lib/dbconn.php";
 
       $sql = "delete from inquiry_ripple where num=$ripple_num";
       mysql_query($sql, $connect);

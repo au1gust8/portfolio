@@ -19,6 +19,7 @@
     <link href="../css/common.css" rel="stylesheet">
     <link href="../css/sub3.css" rel="stylesheet">
     <link href="css/inquiry.css" rel="stylesheet">
+
     <script>
 // <![CDATA[
 try {
@@ -29,14 +30,14 @@ try {
 catch (e) {}
 // ]]>
 </script>
-<script src="js/jquery-1.7.1.min.js"></script>
-<script src="js/nav_new.js"></script>
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script src="../js/nav_new.js"></script>
 <!--[if lt IE 9]> 
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <!--[if lt IE 9]>
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-<![endif]-->s
+<![endif]-->
 </head>
 <?
 	include "../../lib/dbconn.php";
@@ -148,11 +149,11 @@ else
 <div id="skipNav"><a href="#content">본문바로가기</a><a href="#gnb">네비게이션바로가기</a> </div>
 
 <div class="visual visual4">
-<h2>디자인전람회</h2></div>
+<h2>문화확산 및 해외시장</h2></div>
 <div class="sub_nav_box">
 <div class="subnav">
 <ul>
-    <li><a id="nav1" href="sub4-1.html">디자인전람회</a></li>
+    <li><a id="nav1" href="../sub4-1.html">디자인전람회</a></li>
     <li><a id="nav2" href="list.php" class="current">1:1문의</a></li>
 </ul>
 </div>
@@ -214,10 +215,9 @@ else
 //where parent=$item_num->join
 ?>
 			<div id="list_item">
-				<div id="list_item1"><?= $number ?></div>
-				<div id="list_item2">
+			<div id="list_item2">
     <a href="view.php?table=<?=$table?>&num=<?=$item_num?>&page=<?=$page?>">
-        <?= $item_subject ?>
+        <?= $item_subject ?><span><?= $item_date ?></span>
     </a>
     <?
 		if ($num_ripple) //ripple개수빼냄
@@ -225,8 +225,6 @@ else
 ?>
 </div>
 				<div id="list_item3"><?= $item_id ?></div>
-				<div id="list_item4"><?= $item_date ?></div>
-				<div id="list_item5"><?= $item_hit ?></div>
 			</div>
 <?
    	   $number--;

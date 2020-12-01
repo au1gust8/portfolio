@@ -4,7 +4,7 @@
     @extract($_GET);
     @extract($_SESSION);
 
-	include "../lib/dbconn.php";
+	include "../../lib/dbconn.php";
 
 	if ($mode=="modify")
 	{
@@ -24,7 +24,7 @@
 	}
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>1:1문의</title>
@@ -60,7 +60,7 @@
  <!--sub3_4.html-->    
 <div id="title_write">
 <div class="title_area">
-<div class="linemap"><span>통합디자인민원센터</span>&gt;<strong>1:1문의</strong></div><h3>1:1문의</h3> </div></div>  
+<div class="linemap"><span>디자인전람회</span>&gt;<strong>1:1문의</strong></div><h3>1:1문의</h3> </div></div>  
   <div class="content_write"> 
 <?
 	if($mode=="modify")

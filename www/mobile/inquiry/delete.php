@@ -8,7 +8,7 @@
 //$table=메인테이블
 //$num=메인번호
 
-   include "../lib/dbconn.php";
+   include "../../lib/dbconn.php";
 
    $sql = "select * from $table where num = $num";
    $result = mysql_query($sql, $connect);

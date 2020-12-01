@@ -7,7 +7,7 @@
     //세션변수
     //view.php?num=7&page=1
 
-	include "../lib/dbconn.php";
+	include "../../lib/dbconn.php";
 
 	$sql = "select * from $table where num=$num";
 	$result = mysql_query($sql, $connect);
@@ -65,13 +65,29 @@
 	mysql_query($sql, $connect);
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no">
     <title>1:1문의</title>
-    <link href="../common/css/common.css" rel="stylesheet">
-    <link href="../sub3/common/css/sub3common.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/sub4.css" rel="stylesheet">
     <link href="css/inquiry.css" rel="stylesheet">
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+   <script>
+// <![CDATA[
+try {
+    window.addEventListener('load', function () {
+        setTimeout(scrollTo, 0, 0, 1);
+    }, false);
+}
+catch (e) {}
+// ]]>
+</script>
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script src="../js/nav_new.js"></script>
     <script>
 	function check_input()
 	{
@@ -93,26 +109,79 @@
 </script>
 
 </head>
-    <? include "../common/sub_head.html" ?>
 <body>
-<!--sub3_4.html-->
-
-<!--메인비주얼영역-->
-<div class="visual"> <img src="../sub3/common/images/mainvisualsub.jpg" alt=""><h2>통합디자인민원센터</h2> </div>
-<!--서브네비영역-->
-<div class="sub_nav_box">
-    <div class="subnav">
-<ul>
-    <li><a id="nav1" href="../sub3/sub3_1.html">고객서비스헌장</a></li>
-    <li><a id="nav2" href="../sub3/sub3_2.html">핵심서비스이행표준</a></li>
-    <li><a id="nav3" href="../sub3/sub3_3.html">고객응대서비스이행표준</a></li>
-    <li><a id="nav4" class="current" href="list.php">1:1문의</a></li>
-</ul>
-    </div>
-</div>
-           
 <div id="wrap">
-    
+    <div class="box"></div>
+<header id="headerArea">
+<div class="headerBox">
+<h1><a href="../index.html"></a></h1>
+<a href="#" class="menuBtn menu-trigger"><span></span><span></span><span></span></a>
+<div id="nav">
+<nav id="gnb">
+<h2 class="hidden">글로벌네비게이션영역</h2>
+<ul class="mainMenu">
+    <li class="depth1"><a href="#"><span>▼</span> 기관정보 및 사업정보</a>
+        <ul>
+            <li><a href="../sub1-1.html">인사말</a></li>
+            <li><a href="../sub1-2.html">기관역사</a></li>
+            <li><a href="../sub1-3.html">경영목표·비전</a></li>
+        </ul>
+    </li>
+    <li class="depth1"><a href="#"><span>▼</span> 디자인의 사회적 가치</a>
+        <ul>
+            <li><a href="../sub2-1.html">추진체계</a></li>
+            <li><a href="../sub2-2.html">전략과제 및 추진활동</a></li>
+        </ul>
+    </li>
+    <li class="depth1"><a href="#"><span>▼</span> 통합 디자인 민원센터</a>
+        <ul>
+            <li><a href="../sub3-1.html">핵심서비스 이행표준</a></li>
+            <li><a href="../news/list.php">KIDP Main News</a></li>
+        </ul>
+    </li>
+    <li class="depth1"><a href="#"><span>▼</span> 문화확산 및 해외시장</a>
+        <ul>
+            <li><a href="../sub4-1.html">대한민국디자인전람회</a></li>
+            <li><a href="list.php">1:1문의</a></li>
+        </ul>
+    </li>
+</ul>
+<!--<a class="mclose" href="#"></a>-->
+</nav>
+<ul class="join"> <?
+if(!$userid) 
+{
+?>
+<li><a href="../login/login_form.php">로그인</a></li>
+<li><a href="../member/join.html">회원가입</a></li>
+<?
+}
+else
+{
+?>
+<li><a href="../login/logout.php">로그아웃</a></li>
+<li><a href="../login/member_form_modify.php">정보수정</a></li>
+<?
+}
+?>
+</ul>
+</div>
+</div>
+</header>
+<div id="skipNav"><a href="#content">본문바로가기</a><a href="#gnb">네비게이션바로가기</a> </div>
+
+<div class="visual visual3">
+<h2>디자인전람회</h2>
+</div>
+<div class="sub_nav_box">
+ <div class="subnav">
+    <ul>
+        <li><a id="nav1" href="../sub3-1.html">핵심서비스이행표준</a></li>
+        <li><a id="nav2" href="list.php" class="current">KIDP Main News</a></li>
+    </ul>
+</div>
+</div> 
+
 <article id="content">
  <!--sub3_4.html-->    
 <div id="title">
