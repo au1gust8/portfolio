@@ -1,5 +1,5 @@
 /*공통*/
-article{width: 100%;margin:5% auto 0}
+article{width: 98%;margin:0 auto}
 
 #title {width: 100%;margin:0 auto}
 
@@ -12,7 +12,7 @@ article{width: 100%;margin:5% auto 0}
 #page_button {overflow: hidden;position: relative;padding: 5% 0 12%}
 #page_num {position: absolute;top:75%;width: 98%;margin:0 auto;text-align: center}
 #button {}
-#button a{display: block;padding: 8px;text-align: right; background: #fafafa;color: #333;border: 1px solid #753b3b;font-size: 1.25em;text-align: center;width:90%;margin:0 auto 5px}
+#button a{display: block;padding: 8px;background: #fafafa;color: #333;border: 1px solid #753b3b;font-size: 1.25em;text-align: center;margin:0 auto 5px}
 #button .adminbtn{width: 318px;margin: 0px auto 15px auto;overflow: hidden}
 #button .modify,#button .delete{width: 138px;float: left;}
 #button .modify{margin-right: 5px}

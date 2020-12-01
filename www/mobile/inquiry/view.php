@@ -183,15 +183,7 @@ else
 </div> 
 
 <article id="content">
- <!--sub3_4.html-->    
-<div id="title">
-<div class="title_area">
-<div class="linemap"><span>통합디자인민원센터</span>&gt;<strong>1:1문의</strong></div><h3>1:1문의</h3> </div></div>  
   <div class="content">
-     
-
-		<div id="view_comment"> &nbsp;</div>
-
 		<div id="view_title">
 			<div id="view_title1"><?= $item_subject ?></div>
            <div id="view_title2"><?= $item_id ?> | 조회 : <?= $item_hit ?> | <?= $item_date ?> </div>	
