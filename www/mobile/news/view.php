@@ -176,9 +176,7 @@ else
 	}
 ?></div>
 <article id="content_view">    
-<div id="title">    
-<div class="title_area_view">
-<div class="linemap_view"><span>문화확산 및 해외시장</span>&gt;<span>KIDP MAIN NEWS</span>&gt;<strong><?= $item_subject ?></strong></div></div> 
+<div id="title">
    
 <div class="content">    
         
