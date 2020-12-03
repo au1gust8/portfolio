@@ -3,9 +3,9 @@
 #memberForm .headerInner {width: 95%;margin: 0 auto}
 #memberForm header h1{padding: 20px 0;text-indent: -999px;color: rgba(0,0,0,.0);}
 #memberForm header h1 a{display: block;background: url(../../../common/images/main_logo.png) no-repeat;width:150px;height: 37px;background-size: 130px;margin:0 auto}
-form{display: flex;align-content: stretch;align-items: baseline;width: 95%;margin: 0 auto}
+form{width: 95%;margin: 0 auto}
 #login_form h2{font-size:1.8em;text-align:left}
-
+#id_pw_input{margin: 0 0 5% 0}
 #id_pw_input .formbox{border: 1px solid #ccc;margin: 30px 0;height: 40px}
 #id_pw_input ul{display: flex;padding:10px 0;position: relative}
 #id_pw_input ul li{height:30px}
@@ -15,9 +15,7 @@ form{display: flex;align-content: stretch;align-items: baseline;width: 95%;margi
 #id_pw_input ul li:last-of-type span{position: absolute;top:23%;right: 0%;width: 200px}
 /*btn*/
 .btn{}
-.btn input{display: block;text-align: center;padding:10px 0 ;font-weight: bold;float: left;font-size: 1.5em}
+#login_form .btn input{display: block;text-align: center;padding:10px 0 ;font-weight: bold;float: left;font-size: 1.35em}
 
-.btn .login{width: 383px;border: 1px solid #f00;background: #fff}
-.btn .login:hover{background:#f00;transition: .1s ease-in;color: #fff}
-.btn .signup{background: #ccc;color: #fff;border: 0}
-.btn .signup:hover{background: #fff;border: 1px solid #ccc;transition: .1s ease-in;color: #333;width: 383px}
+#login_form .btn input:first-of-type{width:100%;border: 1px solid #f00;background: #fff;margin: 0 0 3% 0}
+#login_form .btn input:last-of-type{width: 100%; background: #ccc;color: #fff;border: 0}
