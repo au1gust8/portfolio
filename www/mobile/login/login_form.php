@@ -5,7 +5,7 @@
     @extract($_SESSION);  
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>한국디자인진흥원 로그인</title>
